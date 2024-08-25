@@ -1,3 +1,11 @@
+How to use:
+Start the server with command line parameters:
+start DSListDemoServer.exe ThirdPersonMap -log -slotname=ThirdPersonMap_01 -DedicatedServerConfigPath=Z:\ue\projects\DSListDemo\ WindowsServer\DedicatedServer.config
+ThirdPersonMap: map name
+-log ：Output log
+-slotname: set the slot name, you can use GetDedicatedServerSlotName to get the corresponding value.
+-DedicatedServerConfigPath specifies the path to the configuration file.
+
 Server-side integration:
 The plugin reads the new configuration from the configuration file every 10 seconds, so you don't have to stop the server process to load the latest configuration, which makes it easier to dynamically modify some parameters in the server process.
 Register the server in the init event of the GameInstance, using the “RegisterServer” node
