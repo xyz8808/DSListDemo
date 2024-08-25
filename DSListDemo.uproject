@@ -1,0 +1,26 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{2A0D91F0-43BA-E1DE-75BB-A7A194C82161}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "DSListDemo",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Name": "DedicatedServerList",
+			"Enabled": true
+		}
+	]
+}
