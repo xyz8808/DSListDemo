@@ -1,3 +1,11 @@
+如何使用：
+通过命令行参数启动服务器：
+start DSListDemoServer.exe ThirdPersonMap -log  -slotname=ThirdPersonMap_01 -DedicatedServerConfigPath=Z:\ue\projects\DSListDemo\WindowsServer\DedicatedServer.config
+ThirdPersonMap：地图名
+-log ：输出log
+-slotname设置slotname名，可以使用GetDedicatedServerSlotName获取到对应值
+-DedicatedServerConfigPath指定配置文件的路径
+
 服务端集成：
 插件会每10秒从配置文件读取新配置，不必停止服务进程就可以加载最新配置，这让动态修改服务进程中的一些参数更方便。
 在GameInstance的init事件中注册服务器，使用“RegisterServer”节点
